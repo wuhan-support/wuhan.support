@@ -8,12 +8,13 @@ repo_name: WuHan.support
 repo_url: https://github.com/wuhan-support/wuhan.support
 
 nav:
+  - 首页: index.md
   - 捐赠:
-    - 捐赠: donate/donate.md
-    - 捐赠: donate/whuh.md
-    - 捐赠: donate/chw.md
-    - 捐赠: donate/rmhwu.md
-    - 捐赠: donate/znhwu.md
+    - 捐赠: donate/index.md
+    - 华中科技大学同济医学院附属协和医院: donate/whuh.md
+    - 武汉市中心医院: donate/chw.md
+    - 武汉大学人民医院: donate/rmhwu.md
+    - 武汉大学中南医院: donate/znhwu.md
 
 
 theme:
