@@ -10,7 +10,10 @@ repo_url: https://github.com/wuhan-support/wuhan.support
 nav:
   - 捐赠:
     - 捐赠: donate/donate.md
-
+    - 捐赠: donate/whuh.md
+    - 捐赠: donate/chw.md
+    - 捐赠: donate/rmhwu.md
+    - 捐赠: donate/znhwu.md
 
 
 theme:
