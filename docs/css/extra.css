@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@media only screen and (max-width: 76.1875em) {
+  .md-nav {
+    background-color: #000;
+  }
+}
+.md-header {
+  background-color: #000;
+}
+
+.md-container {
+  background-color: #333333;
+}
+
+.md-typeset .footnote {
+  color: #ccc;
+}
+
+body {
+  color: #ccc;
+}
+
+.md-typeset pre {
+  background-color: #000;
+}
+
+.md-typeset code {
+  color: #ccc;
+  box-shadow: 0.29412em 0 0 #666666, -0.29412em 0 0 #666666;
+  background-color: #666666;
+}
+
+.md-nav__link[data-md-state=blur] {
+  color: rgba(230, 230, 230, 0.54);
+}
+
+.md-typeset h1 {
+  color: #ccc;
+}
+
+a, .md-typeset a, md-nav__link, md-nav__link:hover {
+  color: #8ebbd0;
+}
+
+a footnote-ref::before {
+  border-color: #8ebbd0;
+}
+
+a footnote-ref::before {
+  color: #8ebbd0;
+}
+
+.md-nav__item--active > .md-nav__link, .md-nav__link:active {
+  color: #8ebbd0;
+}
+
+.md-nav--secondary {
+  border-left: 0.4rem solid #8ebbd0;
+}
+
+.md-nav__link:focus, .md-nav__link:hover {
+  color: #8ebbd0;
+}
+
+.md-typeset hr {
+  border-bottom: 0.1rem dotted #666;
+}
+
+.md-footer-copyright {
+  color: #666;
+}
+
+.md-typeset blockquote {
+  padding-left: 1.2rem;
+  border-left: 0.4rem solid rgba(230, 230, 230, 0.26);
+  color: rgba(230, 230, 230, 0.54);
+}
+
+.md-typeset .codehilite code, .md-typeset .codehilite pre, .md-typeset .highlight code, .md-typeset .highlight pre {
+  color: #fff;
+}
+
+.md-clipboard:before {
+  transition: color 0.25s, opacity 0.25s;
+  transition-property: color, opacity;
+  transition-duration: 0.25s, 0.25s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  color: rgba(240, 240, 240, 0.07);
+  content: "";
+}
+
+.md-typeset .superfences-tabs {
+  background-color: #666666;
+}
+
+div.superfences-content pre {
+  border-top: 1px solid #333333;
+}
+
+@media only screen and (max-width: 76.1875em) {
+  html .md-nav--primary .md-nav__title--site {
+    background-color: #000;
+  }
+
+  html .md-nav--primary .md-nav__title ~ .md-nav__list {
+    background: linear-gradient(180deg, #000 10%, rgba(0, 0, 0, 0)), linear-gradient(180deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.07) 35%, transparent 60%);
+    background-color: #333333;
+  }
+}
+
+/*# sourceMappingURL=extra.css.map */

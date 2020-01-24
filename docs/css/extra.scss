@@ -1,0 +1,92 @@
+$link_color: #8ebbd0;
+$background_color1: #333333;
+$background_color2: #666666;
+
+
+@media only screen and (max-width: 76.1875em) {
+	.md-nav {
+    	background-color: #000;
+	}
+}
+.md-header {
+	background-color: #000;
+}
+.md-container {
+	background-color: $background_color1;
+}
+.md-typeset .footnote {
+	color: #ccc;
+}
+body {
+	color: #ccc;
+}
+.md-typeset pre {
+	background-color: #000;
+}
+.md-typeset code {
+	color: #ccc;
+	box-shadow: 0.29412em 0 0 $background_color2, -0.29412em 0 0 $background_color2;
+	background-color: $background_color2;
+}
+.md-nav__link[data-md-state=blur] {
+	color: rgba(230,230,230,.54);
+}
+.md-typeset h1 {
+	color: #ccc;
+}
+a, .md-typeset a, md-nav__link, md-nav__link:hover {
+	color: $link_color;
+}
+a footnote-ref::before {
+	border-color: $link_color;
+}
+a footnote-ref::before {
+	color: $link_color;
+}
+.md-nav__item--active>.md-nav__link, .md-nav__link:active {
+	color: $link_color;
+}
+.md-nav--secondary {
+	border-left: .4rem solid $link_color;
+} 
+.md-nav__link:focus, .md-nav__link:hover {
+	color: $link_color;
+}
+.md-typeset hr {
+	border-bottom: .1rem dotted #666;
+}
+.md-footer-copyright {
+	color: #666;
+}
+.md-typeset blockquote {
+    padding-left: 1.2rem;
+    border-left: .4rem solid rgba(230,230,230,.26);
+    color: rgba(230,230,230,.54);
+}
+.md-typeset .codehilite code, .md-typeset .codehilite pre, .md-typeset .highlight code, .md-typeset .highlight pre {
+    color: #fff;
+}
+.md-clipboard:before {
+    transition: color .25s,opacity .25s;
+    transition-property: color, opacity;
+    transition-duration: 0.25s, 0.25s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+    color: rgba(240,240,240,.07);
+    content: "\E14D";
+}
+.md-typeset .superfences-tabs {
+    background-color: $background_color2;
+}
+div.superfences-content pre {
+    border-top: 1px solid $background_color1;
+}
+@media only screen and (max-width: 76.1875em) {
+	html .md-nav--primary .md-nav__title--site {
+		background-color: #000;
+	}
+	html .md-nav--primary .md-nav__title~.md-nav__list {
+		background: linear-gradient(180deg,#000 10%,hsla(0,0%,0%,0)),linear-gradient(180deg,rgba(0,0,0,.26),rgba(0,0,0,.07) 35%,transparent 60%);
+		background-color: $background_color1;
+	}
+}

@@ -1,0 +1,80 @@
+site_name: WuHan.support
+site_url: https://wuhan.support
+site_author: Chinese
+site_description: Support the City of WuHan
+copyright: Open source under GNU GPL v3.0
+
+repo_name: WuHan.support
+repo_url: https://github.com/wuhan-support/wuhan.support
+
+nav:
+  - 捐赠:
+    - 捐赠: donate/donate.md
+
+
+
+theme:
+  name: material
+  language: 'zh'
+  palette:
+    primary: 'deep purple'
+    accent: 'amber'
+  feature:
+    tabs: true
+  font:
+    text: 'Noto Sans'
+    code: 'Cascadia Code'
+
+extra:
+  manifest: 'manifest.webmanifest'
+  social:
+    - type: 'github'
+      link: 'https://github.com/wuhan-support/'
+  disqus: 'intzc'
+
+extra_css:
+    - css/css.css
+    - css/extra.css
+
+extra_javascript: 
+    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+google_analytics:
+  - 'UA-104387513-2'
+  - 'auto'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      use_pygments: True
+      noclasses: True
+      pygments_style: monokai
+  - def_list
+  - footnotes
+  - mdx_math
+  - meta
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - toc:
+      permalink: "#"
+
+plugins:
+  - search
+  - awesome-pages
+  # - git-committers
