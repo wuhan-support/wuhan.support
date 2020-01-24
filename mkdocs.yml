@@ -16,8 +16,12 @@ nav:
     - 武汉大学人民医院: donate/rmhwu.md
     - 武汉大学中南医院: donate/znhwu.md
     - 武汉市第一医院: donate/no.1hw.md
+<<<<<<< HEAD
     - 武汉市儿童医院: donate/chw.md
     - 湖北省中医院: donate/whtc.md
+=======
+    - 武汉市儿童医院: donate/wch.md
+>>>>>>> 01af7809493dc120a8592e8d917ea71a7f67023b
 
 
 theme:
