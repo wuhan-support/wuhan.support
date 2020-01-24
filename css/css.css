@@ -1,0 +1,36 @@
+li.toctree-l2 > a:link,
+
+li.toctree-l2 > a:visited {
+  font-weight: bold;
+  color: #404040;
+  margin-left: -6px;
+}
+
+pre {
+    background-color: transparent;
+    border: none;
+}
+
+code {
+background-color: transparent;
+}
+
+.task-list-item {
+list-style-type: none;
+}
+
+.task-list-item input {
+margin: 0 4px 0.25em -20px;
+vertical-align: middle;
+}
+
+.md-typeset__table {
+    min-width: 100%;
+}
+
+@media only screen and (min-width: 768px)
+{
+	td:nth-child(1){
+		white-space: nowrap;
+	}
+}
