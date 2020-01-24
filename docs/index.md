@@ -14,4 +14,4 @@ tags:
 
 有关捐助信息，敬请参阅[捐赠](/donate/index)
 
-本站仍在建设当中，请联系[wuhan.supp@gmail.com](mailto:wuhan.supp@gmail.com)加入我们
+本站仍在建设当中，请联系[wuhan.supp@gmail.com](mailto:wuhan.supp@gmail.com)加入我们。
