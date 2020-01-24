@@ -10,11 +10,10 @@ def load_response():
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'}
         api = 'https://server.toolbon.com/home/tools/getPneumonia'
         response = json.loads(requests.get(api, headers=headers).text)
-        if not response['data']['statistics']['modifyTime'] or not response['data']['areaList']:
+        if not response['data']['areaList']:
             raise Exception('no data received')
         return response
     except Exception:
-        import pdb; pdb.set_trace()
         return load_response()
 
 
@@ -37,7 +36,7 @@ class Data(object):
     def init(self):
         try:
             self.provinces = self.load_stat(self.response['data']['areaList'])
-            self.time_stamp = self.response['data']['statistics']['modifyTime']
+            self.time_stamp = time.time()
             self.suspect = 0
             self.confirmed = 0
             self.cured = 0
@@ -51,11 +50,9 @@ class Data(object):
                 self.data_dict[province.name] = [province.suspect, province.confirmed, province.cured, province.dead]
                 for city in province.cities:
                     self.data_dict[city.name] = [city.suspect, city.confirmed, city.cured, city.dead]
-
             self.write_json()
         except Exception as e:
-            import pdb; pdb.set_trace()
-            time.sleep(10 + 10 * random.random())
+            time.sleep(15 + 10 * random.random())
             self.init()
 
     def update(self):
@@ -95,7 +92,7 @@ if __name__ == "__main__":
     data = Data()
 
     while True:
-        time.sleep(10 + 0 * random.random())
+        time.sleep(45 + 30 * random.random())
         response = load_response()
         if response['data']['areaList'] != data.response['data']['areaList']:
             data.update()
