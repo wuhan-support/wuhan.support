@@ -6,19 +6,28 @@ import time
 import random
 
 def load_response():
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'}
-    api = 'https://server.toolbon.com/home/tools/getPneumonia'
-    return json.loads(requests.get(api, headers=headers).text)
+    try:
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'}
+        api = 'https://server.toolbon.com/home/tools/getPneumonia'
+        response = json.loads(requests.get(api, headers=headers).text)
+        if not response['data']['statistics']['modifyTime'] or not response['data']['areaList']:
+            raise Exception('no data received')
+        return response
+    except Exception:
+        import pdb; pdb.set_trace()
+        return load_response()
+
 
 class Data(object):
     def __init__(self):
         self.response = load_response()
-        self.provinces = None
-        self.time_stamp = None
-        self.suspect = None
-        self.confirmed = None
-        self.cured = None
-        self.dead = None
+        self.provinces = []
+        self.time_stamp = 0
+        self.suspect = 0
+        self.confirmed = 0
+        self.cured = 0
+        self.dead = 0
+        self.data_dict = {}
         self.init()
          
 
@@ -29,23 +38,30 @@ class Data(object):
         try:
             self.provinces = self.load_stat(self.response['data']['areaList'])
             self.time_stamp = self.response['data']['statistics']['modifyTime']
-            self.suspect = sum([province.suspect for province in self.provinces])
-            self.confirmed = sum([province.confirmed for province in self.provinces])
-            self.cured = sum([province.cured for province in self.provinces])
-            self.dead = sum([province.dead for province in self.provinces])
+            self.suspect = 0
+            self.confirmed = 0
+            self.cured = 0
+            self.dead = 0
+            self.data_dict = {}
+            for province in self.provinces:
+                self.suspect += province.suspect
+                self.confirmed += province.confirmed
+                self.cured += province.cured
+                self.dead += province.dead
+                self.data_dict[province.name] = [province.suspect, province.confirmed, province.cured, province.dead]
+                for city in province.cities:
+                    self.data_dict[city.name] = [city.suspect, city.confirmed, city.cured, city.dead]
+
             self.write_json()
         except Exception as e:
-            print(e)
+            import pdb; pdb.set_trace()
             time.sleep(10 + 10 * random.random())
             self.init()
 
     def update(self):
-        response = load_response()
-        if response != self.response:
-            self.init()
-            print('data updated at {}'.format(data.time_stamp))
-            return True
-        return False
+        self.response = load_response()
+        self.init()
+        print('data updated at {}'.format(data.time_stamp))
     
     def write_json(self, file_name=None):
         if not file_name:
@@ -79,6 +95,7 @@ if __name__ == "__main__":
     data = Data()
 
     while True:
-        time.sleep(60 + 30 * random.random())
-        ret = data.update()
-            
+        time.sleep(10 + 0 * random.random())
+        response = load_response()
+        if response['data']['areaList'] != data.response['data']['areaList']:
+            data.update()
