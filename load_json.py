@@ -12,22 +12,21 @@ def load_response():
 
 class Data(object):
     def __init__(self):
-        self.response =  load_response()
-        self.provinces = self.load_stat(self.response['data']['areaList'])
-        self.time_stamp = self.response['data']['statistics']['modifyTime']
-        self.suspect = sum([province.suspect for province in self.provinces])
-        self.confirmed = sum([province.confirmed for province in self.provinces])
-        self.cured = sum([province.cured for province in self.provinces])
-        self.dead = sum([province.dead for province in self.provinces])
-        self.write_json()
+        self.response = load_response()
+        self.provinces = None
+        self.time_stamp = None
+        self.suspect = None
+        self.confirmed = None
+        self.cured = None
+        self.dead = None
+        self.init()
+         
 
     def load_stat(self, area_stat):
         return [Province(province_stat) for province_stat in area_stat]
-    
-    def update():
-        area_stat = load_response()['data']['areaList']
-        if area_stat != self.area_stat:
-            self.response =  load_response()
+
+    def init(self):
+        try:
             self.provinces = self.load_stat(self.response['data']['areaList'])
             self.time_stamp = self.response['data']['statistics']['modifyTime']
             self.suspect = sum([province.suspect for province in self.provinces])
@@ -35,6 +34,15 @@ class Data(object):
             self.cured = sum([province.cured for province in self.provinces])
             self.dead = sum([province.dead for province in self.provinces])
             self.write_json()
+        except Exception as e:
+            print(e)
+            time.sleep(10 + 10 * random.random())
+            self.init()
+
+    def update(self):
+        response = load_response()
+        if response != self.response:
+            self.init()
             print('data updated at {}'.format(data.time_stamp))
             return True
         return False
