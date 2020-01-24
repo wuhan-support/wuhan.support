@@ -2,7 +2,8 @@ import requests
 import json
 import csv
 import os
-
+import time
+import random
 
 def load_response():
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'}
@@ -11,29 +12,38 @@ def load_response():
 
 class Data(object):
     def __init__(self):
-        response =  load_response()
-        self.area_stat = response['data']['areaList']
-        self.provinces = self.load_stat()
-        self.time_stamp = response['data']['statistics']['modifyTime']
+        self.response =  load_response()
+        self.provinces = self.load_stat(self.response['data']['areaList'])
+        self.time_stamp = self.response['data']['statistics']['modifyTime']
         self.suspect = sum([province.suspect for province in self.provinces])
         self.confirmed = sum([province.confirmed for province in self.provinces])
         self.cured = sum([province.cured for province in self.provinces])
         self.dead = sum([province.dead for province in self.provinces])
+        self.write_json()
 
-    def load_stat(area_stat):
-        return [Province(province_stat) for province_stat in self.area_stat]
+    def load_stat(self, area_stat):
+        return [Province(province_stat) for province_stat in area_stat]
     
     def update():
         area_stat = load_response()['data']['areaList']
         if area_stat != self.area_stat:
-            self.provinces = self.load_stat()
-            self.time_stamp = time.time()
-            with open(os.path.join('./data', str(time_stamp)), 'w+') as f:
-                json.dump(response, f)
+            self.response =  load_response()
+            self.provinces = self.load_stat(self.response['data']['areaList'])
+            self.time_stamp = self.response['data']['statistics']['modifyTime']
+            self.suspect = sum([province.suspect for province in self.provinces])
+            self.confirmed = sum([province.confirmed for province in self.provinces])
+            self.cured = sum([province.cured for province in self.provinces])
+            self.dead = sum([province.dead for province in self.provinces])
+            self.write_json()
+            print('data updated at {}'.format(data.time_stamp))
+            return True
+        return False
     
-    def write_json(file_name=os.path.join('./jsons', str(time_stamp))):
+    def write_json(self, file_name=None):
+        if not file_name:
+            file_name = './jsons/{}.json'.format(self.time_stamp)
         with open(file_name, 'w+') as f:
-            json.dump(response, f)
+            json.dump(self.response, f)
 
 class Province(object):
     def __init__(self, province_stat):
@@ -46,7 +56,7 @@ class Province(object):
         self.cities = self.load_stat(province_stat['cities'])
         self.comment = province_stat['comment']
 
-    def load_stat(province_stat_cities):
+    def load_stat(self, province_stat_cities):
         return [City(city_stat) for city_stat in province_stat_cities]
 
 class City(object):
@@ -56,3 +66,11 @@ class City(object):
         self.confirmed = city_stat['confirmedCount']
         self.cured = city_stat['curedCount']
         self.dead = city_stat['deadCount']
+
+if __name__ == "__main__":
+    data = Data()
+
+    while True:
+        time.sleep(60 + 30 * random.random())
+        ret = data.update()
+            
