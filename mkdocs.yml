@@ -26,7 +26,9 @@ nav:
   # 如何就诊
   - 医院门诊: hospital/index.md
   # 与开发者沟通交流或者成为开发者
-  - 贡献: contribution/index.md
+  - 贡献: 
+      - 贡献: contribution/index.md
+      - 贡献数据: contribution/data.md
 
 
 theme:
