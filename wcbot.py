@@ -6,7 +6,7 @@ import random
 USER_DICT = {} # user_id, list of interested places
 
 def main():
-    itchat.auto_login(hotReload=True, enableCmdQR=1)
+    itchat.auto_login(hotReload=True, enableCmdQR=2)
 
     data = Data()
     data_dict == copy(data.data_dict)
@@ -29,3 +29,10 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+湖北省武汉市
+湖北省黄石市、襄樊市
+湖北省十堰市、荆州市、宜昌市
+湖北省荆门市、鄂州市、孝感市
+湖北省黄冈市、咸宁市、随州市
+湖北省恩施土家族苗族自治州、仙桃市、神农架林区

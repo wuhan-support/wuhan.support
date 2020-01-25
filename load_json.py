@@ -1,21 +1,47 @@
-import requests
 import json
-import csv
-import os
-import time
 import random
+import time
+
+import requests
+
 
 def load_response():
     try:
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'}
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4037.2 Safari/537.36',
+            'Connection': 'keep - alive',
+            'Cache-Control': 'max-age=360',
+            'Upgrade-Insecure-Requests': '1',
+            'Accept': '*/*',
+            'Sec-Fetch-Site': 'cross-site',
+            'Sec-Fetch-Mode': 'navigate',
+            'Sec-Fetch-User': '?1',
+            'Sec-Fetch-Dest': 'document',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Accept-Language': 'zh-CN,zh;q=0.9,en-AU;q=0.8,en;q=0.7,zh-TW;q=0.6',
+            'Host': 'service-f9fjwngp-1252021671.bj.apigw.tencentcs.com'
+        }
         api = 'https://service-f9fjwngp-1252021671.bj.apigw.tencentcs.com/release/pneumonia'
         response = json.loads(requests.get(api, headers=headers).text)
         if not response['data']['listByArea']:
-            raise Exception('no data received')
-        print('json loaded')
+            raise Exception(response)
+        print('json loaded at time {}'.format(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())))
         return response
-    except Exception:
+    except Exception as e:
+        print(e)
+        print('json load failed, waiting for around 15 seconds')
+        time.sleep(15 + 5 * random.random())
         return load_response()
+
+
+def load_json(file_name='./jsons/latest.json'):
+    with open(file_name, 'r+') as f:
+        return json.load(f)
+
+
+def write_json(file_name, js):
+    with open(file_name, 'w+') as f:
+        json.dump(js, f)
 
 
 class Data(object):
@@ -29,7 +55,6 @@ class Data(object):
         self.dead = 0
         self.data_dict = {}
         self.init()
-         
 
     def load_stat(self, area_stat):
         return [Province(province_stat) for province_stat in area_stat]
@@ -51,8 +76,13 @@ class Data(object):
                 self.data_dict[province.name] = [province.suspect, province.confirmed, province.cured, province.dead]
                 for city in province.cities:
                     self.data_dict[city.name] = [city.suspect, city.confirmed, city.cured, city.dead]
-            self.write_json()
+            latest_response = load_json()
+            if latest_response['data']['listByArea'] != self.response['data']['listByArea']:
+                write_json('./jsons/{}.json'.format(self.time_stamp), self.response)
+                write_json('./jsons/latest.json', self.response)
         except Exception as e:
+            print(e)
+            print('data construction failed')
             time.sleep(15 + 10 * random.random())
             self.init()
 
@@ -60,12 +90,7 @@ class Data(object):
         self.response = load_response()
         self.init()
         print('data updated at {}'.format(data.time_stamp))
-    
-    def write_json(self, file_name=None):
-        if not file_name:
-            file_name = './jsons/{}.json'.format(self.time_stamp)
-        with open(file_name, 'w+') as f:
-            json.dump(self.response, f)
+
 
 class Province(object):
     def __init__(self, province_stat):
@@ -81,6 +106,7 @@ class Province(object):
     def load_stat(self, province_stat_cities):
         return [City(city_stat) for city_stat in province_stat_cities]
 
+
 class City(object):
     def __init__(self, city_stat):
         self.name = city_stat['cityName']
@@ -88,6 +114,7 @@ class City(object):
         self.confirmed = city_stat['confirmed']
         self.cured = city_stat['cured']
         self.dead = city_stat['dead']
+
 
 if __name__ == "__main__":
     data = Data()
