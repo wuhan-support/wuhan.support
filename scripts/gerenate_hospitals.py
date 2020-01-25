@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
+import csv
 import os
 import time
-import csv
 
 
 def read(filename='../data/hospitals.csv', encoding='utf-8'):
@@ -10,13 +10,15 @@ def read(filename='../data/hospitals.csv', encoding='utf-8'):
         hospitals = [hospital for hospital in reader]
     return hospitals
 
+
 def write_md(hospital):
     path = '../docs/donate/{}.md'.format(hospital[0])
     md = gerenate_md(hospital)
-#     if os.path.exists(path):
-#         return
+    if os.path.exists(path):
+        return
     with open(path, 'w+', encoding='utf-8') as f:
         f.write(md)
+
 
 def gerenate_md(hospital):
     md = ''
@@ -28,7 +30,8 @@ def gerenate_md(hospital):
     md += '\n'
     md += gerenate_contacts(hospital)
     md += '\n'
-    return md        
+    return md
+
 
 def gerenate_header(hospital):
     header = '---\n'
@@ -46,6 +49,7 @@ def gerenate_header(hospital):
     header += '---\n'
     return header
 
+
 def gerenate_intro(hospital):
     intro = ''
     for s in hospital[7].split('\\'):
@@ -53,11 +57,13 @@ def gerenate_intro(hospital):
         intro += '\n\n'
     return intro[:-1]
 
+
 def gerenate_table(hospital):
     table = '|  防护物资（耗材）  |  标准/要求  |\n|------------------|-----------|\n'
     for supply, standard in zip(hospital[12].split('、'), hospital[13].split('、')):
         table += '|  {}  |  {}\n'.format(supply, standard)
     return table
+
 
 def gerenate_contacts(hospital):
     contacts = ''
@@ -68,6 +74,7 @@ def gerenate_contacts(hospital):
     for contact, mobile in zip(hospital[10].split('、'), hospital[11].split('、')):
         contacts += '+ {} {}\n'.format(contact, mobile)
     return contacts[:-1]
+
 
 if __name__ == '__main__':
     hospitals = read()
