@@ -19,5 +19,4 @@ tags:
 
 ![Screenshot](../images/wc_group_qr_code.png)
 
-
 祝您新年快乐，身体健康。
