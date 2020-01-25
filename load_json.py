@@ -8,10 +8,11 @@ import random
 def load_response():
     try:
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'}
-        api = 'https://server.toolbon.com/home/tools/getPneumonia'
+        api = 'https://service-f9fjwngp-1252021671.bj.apigw.tencentcs.com/release/pneumonia'
         response = json.loads(requests.get(api, headers=headers).text)
-        if not response['data']['areaList']:
+        if not response['data']['listByArea']:
             raise Exception('no data received')
+        print('json loaded')
         return response
     except Exception:
         return load_response()
@@ -35,7 +36,7 @@ class Data(object):
 
     def init(self):
         try:
-            self.provinces = self.load_stat(self.response['data']['areaList'])
+            self.provinces = self.load_stat(self.response['data']['listByArea'])
             self.time_stamp = time.time()
             self.suspect = 0
             self.confirmed = 0
@@ -70,10 +71,10 @@ class Province(object):
     def __init__(self, province_stat):
         self.name = province_stat['provinceName']
         self.abbreviation = province_stat['provinceShortName']
-        self.suspect = province_stat['suspectedCount']
-        self.confirmed = province_stat['confirmedCount']
-        self.cured = province_stat['curedCount']
-        self.dead = province_stat['deadCount']
+        self.suspect = province_stat['suspected']
+        self.confirmed = province_stat['confirmed']
+        self.cured = province_stat['cured']
+        self.dead = province_stat['dead']
         self.cities = self.load_stat(province_stat['cities'])
         self.comment = province_stat['comment']
 
@@ -83,10 +84,10 @@ class Province(object):
 class City(object):
     def __init__(self, city_stat):
         self.name = city_stat['cityName']
-        self.suspect = city_stat['suspectedCount']
-        self.confirmed = city_stat['confirmedCount']
-        self.cured = city_stat['curedCount']
-        self.dead = city_stat['deadCount']
+        self.suspect = city_stat['suspected']
+        self.confirmed = city_stat['confirmed']
+        self.cured = city_stat['cured']
+        self.dead = city_stat['dead']
 
 if __name__ == "__main__":
     data = Data()
@@ -94,5 +95,5 @@ if __name__ == "__main__":
     while True:
         time.sleep(45 + 30 * random.random())
         response = load_response()
-        if response['data']['areaList'] != data.response['data']['areaList']:
+        if response['data']['listByArea'] != data.response['data']['listByArea']:
             data.update()
