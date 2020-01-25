@@ -4,14 +4,14 @@ import time
 import csv
 
 
-def read(filename='./data/hospitals.csv', encoding='utf-8'):
+def read(filename='../data/hospitals.csv', encoding='utf-8'):
     with open(filename, 'r', encoding=encoding) as f:
         reader = csv.reader(f, delimiter=',')
         hospitals = [hospital for hospital in reader]
     return hospitals
 
 def write_md(hospital):
-    path = './docs/donate/{}.md'.format(hospital[0])
+    path = '../docs/donate/{}.md'.format(hospital[0])
     md = gerenate_md(hospital)
 #     if os.path.exists(path):
 #         return
