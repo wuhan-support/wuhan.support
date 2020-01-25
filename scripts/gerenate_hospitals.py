@@ -32,8 +32,8 @@ def gerenate_md(hospital):
 
 def gerenate_header(hospital):
     header = '---\n'
-    header += 'title: {}\n'.format(hospital[4])
-    header += 'summary: {}\n'.format(hospital[5])
+    header += 'title: {}\n'.format(hospital[5])
+    header += 'summary: {}\n'.format(hospital[6])
     header += 'authors: \n'
     for author in hospital[1].split('、'):
         header += '    - {}\n'.format(author)
@@ -42,29 +42,30 @@ def gerenate_header(hospital):
     header += 'tags: \n    - 捐赠\n'
     header += 'province: {}\n'.format(hospital[2])
     header += 'city: {}\n'.format(hospital[3])
+    header += 'suburb: {}\n'.format(hospital[4])
     header += '---\n'
     return header
 
 def gerenate_intro(hospital):
     intro = ''
-    for s in hospital[6].split('\\'):
+    for s in hospital[7].split('\\'):
         intro += s
         intro += '\n\n'
     return intro[:-1]
 
 def gerenate_table(hospital):
     table = '|  防护物资（耗材）  |  标准/要求  |\n|------------------|-----------|\n'
-    for supply, standard in zip(hospital[11].split('、'), hospital[12].split('、')):
+    for supply, standard in zip(hospital[12].split('、'), hospital[13].split('、')):
         table += '|  {}  |  {}\n'.format(supply, standard)
     return table
 
 def gerenate_contacts(hospital):
     contacts = ''
-    contacts += '地址：{}\n\n'.format(hospital[7])
-    if hospital[8]:
-        contacts += '电话：{}\n\n'.format(hospital[8])
+    contacts += '地址：{}\n\n'.format(hospital[8])
+    if hospital[9]:
+        contacts += '电话：{}\n\n'.format(hospital[9])
     contacts += '联系人：\n\n'
-    for contact, mobile in zip(hospital[9].split('、'), hospital[10].split('、')):
+    for contact, mobile in zip(hospital[10].split('、'), hospital[11].split('、')):
         contacts += '+ {} {}\n'.format(contact, mobile)
     return contacts[:-1]
 
