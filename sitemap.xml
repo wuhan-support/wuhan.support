@@ -2,62 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://wuhan.support/</loc>
-     <lastmod>2020-01-25</lastmod>
+     <lastmod>2020-01-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wuhan.support/hotels/dlfzry/</loc>
+     <lastmod>2020-01-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://wuhan.support/donate/</loc>
-     <lastmod>2020-01-25</lastmod>
+     <lastmod>2020-01-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://wuhan.support/donate/whuh/</loc>
-     <lastmod>2020-01-25</lastmod>
+     <lastmod>2020-01-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://wuhan.support/donate/chw/</loc>
-     <lastmod>2020-01-25</lastmod>
+     <lastmod>2020-01-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://wuhan.support/donate/rmhwu/</loc>
-     <lastmod>2020-01-25</lastmod>
+     <lastmod>2020-01-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://wuhan.support/donate/znhwu/</loc>
-     <lastmod>2020-01-25</lastmod>
+     <lastmod>2020-01-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://wuhan.support/donate/no.1hw/</loc>
-     <lastmod>2020-01-25</lastmod>
+     <lastmod>2020-01-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://wuhan.support/donate/wch/</loc>
-     <lastmod>2020-01-25</lastmod>
+     <lastmod>2020-01-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://wuhan.support/donate/whtc/</loc>
-     <lastmod>2020-01-25</lastmod>
+     <lastmod>2020-01-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://wuhan.support/protection/</loc>
-     <lastmod>2020-01-25</lastmod>
+     <lastmod>2020-01-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://wuhan.support/hospital/</loc>
-     <lastmod>2020-01-25</lastmod>
+     <lastmod>2020-01-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://wuhan.support/contribution/</loc>
-     <lastmod>2020-01-25</lastmod>
+     <lastmod>2020-01-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wuhan.support/contribution/data/</loc>
+     <lastmod>2020-01-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
