@@ -1,4 +1,4 @@
-# WuHan-support
+# WuHan-Support :fist:
 
 我们是来自五湖四海的志愿者，因为关心武汉及其它地方的武汉肺炎患者走到一起。
 
@@ -30,22 +30,22 @@
 
 我们热烈欢迎所有人的加入，更十分乐意于与所有组织合作。
 
-### 技术
+### 技术组
 
-技术组：如果您想通过技术出一份力，敬请联系陟原（微信号：INT_ZC），并请参阅 feiyan.help/contribution
+如果您想通过**技术**出一份力，敬请联系**陟原**（微信号：`INT_ZC`），并请参阅 [https://feiyan.help/contribution](https://feiyan.help/contribution)
 
-### 信息
+### 信息组
 
-如果您想参与各类信息搜集，敬请联系牙膏 (微信号：wxid_dm469)，并请参阅 https://shimo.im/docs/Xtty8gHgcdVyGpkH/read
+如果您想参与各类**信息搜集**，敬请联系**牙膏** (微信号：`wxid_dm469`)，并请参阅 [https://shimo.im/docs/Xtty8gHgcdVyGpkH/read](https://shimo.im/docs/Xtty8gHgcdVyGpkH/read)
 
-### 宣传
+### 宣传组
 
-无论你擅长新媒体、图形设计抑或是文案，我们都欢迎您。敬请联系稀饭（微信号：F13735592019），并请参阅 https://shimo.im/docs/tKJTPKw9gTjyQ8xP/
+无论你擅长**新媒体、图形设计**抑或是**文案**，我们都欢迎您。敬请联系**稀饭**（微信号：`F13735592019`），并请参阅 [https://shimo.im/docs/tKJTPKw9gTjyQ8xP/](https://shimo.im/docs/tKJTPKw9gTjyQ8xP/)
 
 ### 生命科学
 
-如果您钻研生物学、有机化学或者医学，那您大概就是我们最需要的人。相信我们一定能借助您的专业背景变得更好！敬请联系陟原（微信如前）。
+如果您钻研生物学、有机化学或者医学，那您大概就是我们最需要的人。相信我们一定能借助您的专业背景变得更好！敬请联系**陟原**（微信如前）。
 
 ### 合作
 
-我们热衷于合作，我们相信现在更是我们团结在一起的时候。有关合作信息，敬请联系陟原（微信如前）。
+我们热衷于合作，我们相信现在更是我们团结在一起的时候。有关合作信息，敬请联系**陟原**（微信如前）。
