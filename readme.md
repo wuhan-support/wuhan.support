@@ -1,4 +1,4 @@
-# 大家好 欢迎加入$\color{#4E2E86}{WuHan.support}$ 非盈利公益项目
+# 大家好 欢迎加入WuHan.support非盈利公益项目
 
 
 
@@ -23,7 +23,7 @@ nCoV疫情地图
 
 ## 疫情官方信息汇总平台
 
-#### 支持武汉"官方信息汇总平台：$\color{#4E2E86}{https://wuhan.support}$
+#### 支持武汉"官方信息汇总平台：https://wuhan.support
 
 **本平台汇总的信息如下：**
 
@@ -78,9 +78,6 @@ nCoV疫情地图
 具体工作内容和组织架构的项目文档可参见：https://docs.qq.com/doc/DZW9ZZmlpSW5Jd1B6 
 #### 联系方式
  **团队招募微信群**
-![QRCode.png](0.png)
+![a86454e71dc921b8732f192e6334c090.png](en-resource://0.png)
 
 #### 武汉加油！中国加油！向所有面向疫情战斗的同胞们致敬
-
-
-
