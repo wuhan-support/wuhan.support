@@ -1,10 +1,10 @@
-site_name: WuHan.support
-site_url: https://wuhan.support
+site_name: feiyan.help
+site_url: https://feiyan.help
 site_author: Chinese
 site_description: Support the City of WuHan
 copyright: Open source under GNU GPL v3.0
 
-repo_name: WuHan.support
+repo_name: feiyan.help
 repo_url: https://github.com/wuhan-support/wuhan.support
 
 nav:
