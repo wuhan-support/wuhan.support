@@ -42,8 +42,8 @@ def gerenate_header(hospitals):
     for author in hospital[1].split('、'):
         header += '    - {}\n'.format(author)
     header += 'date: {}\n'.format(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
-    header += 'categories: \n    - 捐赠\n'
-    header += 'tags: \n    - 捐赠\n'
+    header += 'categories: \n    - 发热门诊定点机构\n'
+    header += 'tags: \n    - 发热门诊定点机构\n'
     header += 'province: {}\n'.format(hospital[2])
     header += 'city: {}\n'.format(hospital[3])
     header += 'suburb: {}\n'.format(hospital[4])
