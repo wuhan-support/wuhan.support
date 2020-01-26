@@ -1,9 +1,9 @@
 ---
-title: 甘肃省发热门诊定点机构甘肃省
-summary: 甘肃省发热门诊定点机构甘肃省
+title: 甘肃省发热门诊定点机构
+summary: 甘肃省发热门诊定点机构
 authors: 
     - Zhiyuan Chen
-date: 2020-01-26 19:58:50
+date: 2020-01-26 20:18:53
 categories: 
     - 捐赠
 tags: 

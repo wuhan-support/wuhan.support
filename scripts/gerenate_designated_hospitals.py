@@ -36,8 +36,8 @@ def gerenate_md(hospitals):
 def gerenate_header(hospitals):
     hospital = hospitals[:][1]
     header = '---\n'
-    header += 'title: 甘肃省发热门诊定点机构{}\n'.format(hospital[2])
-    header += 'summary: 甘肃省发热门诊定点机构{}\n'.format(hospital[2])
+    header += 'title: {}发热门诊定点机构\n'.format(hospital[2])
+    header += 'summary: {}发热门诊定点机构\n'.format(hospital[2])
     header += 'authors: \n'
     for author in hospital[1].split('、'):
         header += '    - {}\n'.format(author)
@@ -51,10 +51,16 @@ def gerenate_header(hospitals):
     return header
 
 def gerenate_table(hospitals):
-    hospital = hospitals[:][1]
-    table = '|  城市  |  区/县  |  名称  |  地址  |\n|------|-------|------|------|\n'
+    
+    try:
+        hospitals[:][1][7]
+        table = '|  城市  |  区/县  |  名称  |  地址  |  电话  |\n|------|-------|------|------|------|\n'
+        string = '|  {}  |  {}  |  {}  |  {}  |  {}  \n'
+    except IndexError:
+        table = '|  城市  |  区/县  |  名称  |  地址  |\n|------|-------|------|------|\n'
+        string = '|  {}  |  {}  |  {}  |  {}  \n'
     for hospital in hospitals[:]:
-        table += '|  {}  |  {}  |  {}  |  {}  \n'.format(*hospital[3:])
+            table += string.format(*hospital[3:])
     return table
 
 
