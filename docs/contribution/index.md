@@ -11,12 +11,36 @@ tags:
     - 贡献
 ---
 
-我们欢迎所有拥有一技之长的人士加入我们，无论您是医生、生物学家，还是与我一样的程序员，我们都非常欢迎您的加入。
+# 贡献
 
-如您有任何想法，您可以直接在我们的仓库当中发起一个议题，我们会尽快跟进。与此同时，我们十分欢迎所有的合并请求。
+欢迎您加入 wuhan.support 团队！
 
-如您不熟悉Git的使用，以下是我们微信群的二维码，您也可直接扫码加入我们。如您不希望加入微信群，也可通过向[我们](mailto:wuhan.supp@gmail.com)发送邮件带来您的想法。
+请扫码加入微信志愿者群：
 
-![Screenshot](../images/wc_group_qr_code.png)
+![QR Volunteers](../images/qr_volunteers.png)
+
+## 技术
+
+技术组：如果您想通过技术出一份力，敬请联系陟原（微信号：INT_ZC），并请参阅 feiyan.help/contribution
+
+![QR Zhiyuan](../images/qr_zc.jpg)
+
+## 信息
+
+如果您想参与各类信息搜集，敬请联系牙膏 (微信号：wxid_dm469)，并请参阅 https://shimo.im/docs/Xtty8gHgcdVyGpkH/read
+
+![QR Yagao](../images/qr_yagao.jpg)
+
+
+## 宣传
+
+无论你擅长新媒体、图形设计抑或是文案，我们都欢迎您。敬请联系稀饭（微信号：F13735592019），并请参阅 https://shimo.im/docs/tKJTPKw9gTjyQ8xP/
+
+![QR Xifan](../images/qr_xifan.jpg)
+
+## 生命科学
+
+如果您钻研生物学、有机化学或者医学，那您大概就是我们最需要的人。相信我们一定能借助您的专业背景变得更好！敬请联系陟原（微信如前）。
+
 
 祝您新年快乐，身体健康。

@@ -60,40 +60,50 @@ def gerenate_table(hospitals, name):
         string = '|  {}  |  {}  |  {}  |  {}  \n'
     city = ''
     city_hospitals = []
-    for hospital in hospitals[:]:
+    hospitals_len = len(hospitals)
+    for index, hospital in enumerate(hospitals[:]):
         table += string.format(*hospital[3:])
         if not city:
             city = hospital[3]
             city_hospitals.append(hospital)
+        # ensure the info of last iter
+        elif index == hospitals_len - 1:
+            gerenate_city(city_hospitals, province_dir, city)
         elif city == hospital[3]:
             city_hospitals.append(hospital)
         else:
-            suburb = ''
-            suburb_hospitals = []
-            # 怎么杨移除xx族自治州？
-            if city.endswith('市'):
-                city = city[:-1]
-            city_name = ''.join(py.lazy_pinyin(city, style=py.Style.NORMAL))
-            city_path = os.path.join(province_dir, '{}.md'.format(city_name))
-            if os.path.exists(city_path):
-                pass
-            if not os.path.isdir(province_dir):
-                os.makedirs(province_dir)
-            try:
-                hospitals[:][1][7]
-                city_table = '|  区/县  |  名称  |  地址  |  电话  |\n|------|-------|------|------|------|\n'
-                city_string = '|  {}  |  {}  |  {}  |  {}  \n'
-            except IndexError:
-                city_table = '|  区/县  |  名称  |  地址  |\n|------|-------|------|------|\n'
-                city_string = '|  {}  |  {}  |  {}  \n'
-            for city_hospital in city_hospitals:
-                city_table += city_string.format(*city_hospital[4:])
-
-            with open(city_path, 'w+', encoding='utf-8') as f:
-                f.write('{}\n{}\n'.format(gerenate_header(city_hospitals[0], 3), city_table))
+            gerenate_city(city_hospitals, province_dir, city)
             city = ''
             city_hospitals = []
+
     return table
+
+
+def gerenate_city(city_hospitals, province_dir, city):
+    suburb = ''
+    suburb_hospitals = []
+    # 怎么杨移除xx族自治州？
+    if city.endswith(('市', '州')):
+        city = city[:-1]
+    city_name = ''.join(py.lazy_pinyin(city, style=py.Style.NORMAL))
+    city_path = os.path.join(province_dir, '{}.md'.format(city_name))
+    if os.path.exists(city_path):
+        pass
+    if not os.path.isdir(province_dir):
+        os.makedirs(province_dir)
+    try:
+        hospitals[:][1][7]
+        city_table = '|  区/县  |  名称  |  地址  |  电话  |\n|------|-------|------|------|\n'
+        city_string = '|  {}  |  {}  |  {}  |  {}  \n'
+    except IndexError:
+        city_table = '|  区/县  |  名称  |  地址  |\n|------|-------|------|\n'
+        city_string = '|  {}  |  {}  |  {}  \n'
+    for city_hospital in city_hospitals:
+        city_table += city_string.format(*city_hospital[4:])
+
+    with open(city_path, 'w+', encoding='utf-8') as f:
+        f.write('{}\n{}\n'.format(gerenate_header(city_hospitals[0], 3), city_table))
+
 
 
 if __name__ == '__main__':

@@ -28,8 +28,42 @@ nav:
   # 如何就诊
   - 发热门诊定点机构:
     - 医院门诊: hospitals/index.md
-    - 湖北省发热门诊定点机构: hospitals/hubei.md
-    - 甘肃省发热门诊定点机构: hospitals/gansu.md
+    - 湖北省:
+      - 湖北省: hospitals/hubei.md
+      - 武汉市: hospitals/hubei/wuhan.md
+      - 黄石市: hospitals/hubei/huangshi.md
+      - 十堰市: hospitals/hubei/shiyan.md
+      - 荆州市: hospitals/hubei/jingzhou.md
+      #- 宜昌市: hospitals/hubei/yichang.md
+      - 襄阳市: hospitals/hubei/xiangyang.md
+      - 鄂州市: hospitals/hubei/ezhou.md
+      - 荆门市: hospitals/hubei/jingmen.md
+      - 黄冈市: hospitals/hubei/huanggang.md
+      - 孝感市: hospitals/hubei/xiaogan.md
+      - 咸宁市: hospitals/hubei/xianning.md
+      - 仙桃市: hospitals/hubei/xiantao.md
+      - 潜江市: hospitals/hubei/qianjiang.md
+      - 神农架林区: hospitals/hubei/shennongjia.md
+      - 恩施土家族苗族自治州发: hospitals/hubei/enshi.md
+      - 天门市: hospitals/hubei/tianmen.md
+      - 随州市 : hospitals/hubei/suizhou.md
+    - 甘肃省:
+      - 甘肃省: hospitals/gansu.md
+      - 兰州市: hospitals/gansu/lanzhou.md
+      #- 嘉峪关市: hospitals/gansu/jiayuguan.md
+      - 金昌市: hospitals/gansu/jinchang.md
+      - 白银市: hospitals/gansu/baiyin.md
+      - 天水市: hospitals/gansu/tianshui.md
+      - 酒泉市: hospitals/gansu/jiuquan.md
+      - 张掖市: hospitals/gansu/zhangye.md
+      - 武威市: hospitals/gansu/wuwei.md
+      - 定西市: hospitals/gansu/dingxi.md
+      - 陇南市: hospitals/gansu/longnan.md
+      - 平凉市: hospitals/gansu/pingliang.md
+      - 庆阳市: hospitals/gansu/qingyang.md
+      - 临夏市: hospitals/gansu/linxia.md
+      - 甘南市: hospitals/gansu/gannan.md
+
   # 与开发者沟通交流或者成为开发者
   - 贡献: 
       - 贡献: contribution/index.md
