@@ -26,9 +26,10 @@ nav:
   # 如何防护
   - 预防手册: protection/index.md
   # 如何就诊
-  - 医院门诊:
+  - 发热门诊定点机构:
     - 医院门诊: hospitals/index.md
-    - 甘肃省定点医院: hospitals/gansu.md
+    - 湖北省发热门诊定点机构: hospitals/hubei.md
+    - 甘肃省发热门诊定点机构: hospitals/gansu.md
   # 与开发者沟通交流或者成为开发者
   - 贡献: 
       - 贡献: contribution/index.md
