@@ -11,6 +11,8 @@ nav:
   # 现状
   - 主页: index.md
   # 如何捐赠
+  - 医护人员免费住宿:
+    - 武汉大陆坊自如驿: hotels/dlfzry.md
   - 捐赠渠道:
     - 主要渠道: donate/index.md
     - 各个医院:
@@ -24,7 +26,9 @@ nav:
   # 如何防护
   - 预防手册: protection/index.md
   # 如何就诊
-  - 医院门诊: hospital/index.md
+  - 医院门诊:
+    - 医院门诊: hospitals/index.md
+    - 甘肃省定点医院: hospitals/gansu.md
   # 与开发者沟通交流或者成为开发者
   - 贡献: 
       - 贡献: contribution/index.md
@@ -37,6 +41,7 @@ theme:
   palette:
     primary: 'deep purple'
     accent: 'amber'
+  logo: 'images/logo.png'
   feature:
     tabs: true
   font:
@@ -52,7 +57,7 @@ extra:
 
 extra_css:
     - css/css.css
-    - css/extra.css
+    #- css/extra.css
 
 extra_javascript: 
     - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
