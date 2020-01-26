@@ -56,7 +56,12 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://wuhan.support/hospital/</loc>
+     <loc>https://wuhan.support/hospitals/</loc>
+     <lastmod>2020-01-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wuhan.support/hospitals/gansu/</loc>
      <lastmod>2020-01-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
