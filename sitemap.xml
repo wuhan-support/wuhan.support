@@ -1,78 +1,228 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>https://wuhan.support/</loc>
-     <lastmod>2020-01-26</lastmod>
+     <loc>https://feiyan.help/</loc>
+     <lastmod>2020-01-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://wuhan.support/hotels/dlfzry/</loc>
-     <lastmod>2020-01-26</lastmod>
+     <loc>https://feiyan.help/hospitals/</loc>
+     <lastmod>2020-01-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://wuhan.support/donate/</loc>
-     <lastmod>2020-01-26</lastmod>
+     <loc>https://feiyan.help/hospitals/hubei/</loc>
+     <lastmod>2020-01-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://wuhan.support/donate/whuh/</loc>
-     <lastmod>2020-01-26</lastmod>
+     <loc>https://feiyan.help/hospitals/hubei/wuhan/</loc>
+     <lastmod>2020-01-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://wuhan.support/donate/chw/</loc>
-     <lastmod>2020-01-26</lastmod>
+     <loc>https://feiyan.help/hospitals/hubei/huangshi/</loc>
+     <lastmod>2020-01-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://wuhan.support/donate/rmhwu/</loc>
-     <lastmod>2020-01-26</lastmod>
+     <loc>https://feiyan.help/hospitals/hubei/shiyan/</loc>
+     <lastmod>2020-01-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://wuhan.support/donate/znhwu/</loc>
-     <lastmod>2020-01-26</lastmod>
+     <loc>https://feiyan.help/hospitals/hubei/jingzhou/</loc>
+     <lastmod>2020-01-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://wuhan.support/donate/no.1hw/</loc>
-     <lastmod>2020-01-26</lastmod>
+     <loc>https://feiyan.help/hospitals/hubei/xiangyang/</loc>
+     <lastmod>2020-01-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://wuhan.support/donate/wch/</loc>
-     <lastmod>2020-01-26</lastmod>
+     <loc>https://feiyan.help/hospitals/hubei/ezhou/</loc>
+     <lastmod>2020-01-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://wuhan.support/donate/whtc/</loc>
-     <lastmod>2020-01-26</lastmod>
+     <loc>https://feiyan.help/hospitals/hubei/jingmen/</loc>
+     <lastmod>2020-01-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://wuhan.support/protection/</loc>
-     <lastmod>2020-01-26</lastmod>
+     <loc>https://feiyan.help/hospitals/hubei/huanggang/</loc>
+     <lastmod>2020-01-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://wuhan.support/hospitals/</loc>
-     <lastmod>2020-01-26</lastmod>
+     <loc>https://feiyan.help/hospitals/hubei/xiaogan/</loc>
+     <lastmod>2020-01-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://wuhan.support/hospitals/gansu/</loc>
-     <lastmod>2020-01-26</lastmod>
+     <loc>https://feiyan.help/hospitals/hubei/xianning/</loc>
+     <lastmod>2020-01-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://wuhan.support/contribution/</loc>
-     <lastmod>2020-01-26</lastmod>
+     <loc>https://feiyan.help/hospitals/hubei/xiantao/</loc>
+     <lastmod>2020-01-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://wuhan.support/contribution/data/</loc>
-     <lastmod>2020-01-26</lastmod>
+     <loc>https://feiyan.help/hospitals/hubei/qianjiang/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hospitals/hubei/shennongjia/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hospitals/hubei/enshi/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hospitals/hubei/tianmen/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hospitals/hubei/suizhou/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hospitals/gansu/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hospitals/gansu/lanzhou/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hospitals/gansu/jinchang/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hospitals/gansu/baiyin/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hospitals/gansu/tianshui/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hospitals/gansu/jiuquan/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hospitals/gansu/zhangye/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hospitals/gansu/wuwei/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hospitals/gansu/dingxi/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hospitals/gansu/longnan/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hospitals/gansu/pingliang/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hospitals/gansu/qingyang/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hospitals/gansu/linxia/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hospitals/gansu/gannan/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/hotels/dlfzry/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/donate/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/donate/whuh/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/donate/chw/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/donate/rmhwu/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/donate/znhwu/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/donate/no.1hw/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/donate/wch/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/donate/whtc/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/protection/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/contribution/</loc>
+     <lastmod>2020-01-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://feiyan.help/contribution/data/</loc>
+     <lastmod>2020-01-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
