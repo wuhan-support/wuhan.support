@@ -78,7 +78,7 @@ nCoV疫情地图
 具体工作内容和组织架构的项目文档可参见：https://docs.qq.com/doc/DZW9ZZmlpSW5Jd1B6 
 #### 联系方式
  **团队招募微信群**
-![a86454e71dc921b8732f192e6334c090.png](en-resource://database/566:0)
+![QRCode.png](0.png)
 
 #### 武汉加油！中国加油！向所有面向疫情战斗的同胞们致敬
 
