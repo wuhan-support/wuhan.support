@@ -10,24 +10,9 @@ repo_url: https://github.com/wuhan-support/wuhan.support
 nav:
   # 现状
   - 主页: index.md
-  # 如何捐赠
-  - 医护人员免费住宿:
-    - 武汉大陆坊自如驿: hotels/dlfzry.md
-  - 捐赠渠道:
-    - 主要渠道: donate/index.md
-    - 各个医院:
-      - 华中科技大学同济医学院附属协和医院: donate/whuh.md
-      - 武汉市中心医院: donate/chw.md
-      - 武汉大学人民医院: donate/rmhwu.md
-      - 武汉大学中南医院: donate/znhwu.md
-      - 武汉市第一医院: donate/no.1hw.md
-      - 武汉市儿童医院: donate/wch.md
-      - 湖北省中医院: donate/whtc.md
-  # 如何防护
-  - 预防手册: protection/index.md
   # 如何就诊
   - 发热门诊定点机构:
-    - 医院门诊: hospitals/index.md
+    - 就诊: hospitals/index.md
     - 湖北省:
       - 湖北省: hospitals/hubei.md
       - 武汉市: hospitals/hubei/wuhan.md
@@ -63,7 +48,21 @@ nav:
       - 庆阳市: hospitals/gansu/qingyang.md
       - 临夏市: hospitals/gansu/linxia.md
       - 甘南市: hospitals/gansu/gannan.md
-
+  # 如何捐赠
+  - 医护人员免费住宿:
+    - 武汉大陆坊自如驿: hotels/dlfzry.md
+  - 捐赠渠道:
+    - 主要渠道: donate/index.md
+    - 武汉市:
+      - 华中科技大学同济医学院附属协和医院: donate/whuh.md
+      - 武汉市中心医院: donate/chw.md
+      - 武汉大学人民医院: donate/rmhwu.md
+      - 武汉大学中南医院: donate/znhwu.md
+      - 武汉市第一医院: donate/no.1hw.md
+      - 武汉市儿童医院: donate/wch.md
+      - 湖北省中医院: donate/whtc.md
+  # 如何防护
+  - 预防手册: protection/index.md
   # 与开发者沟通交流或者成为开发者
   - 贡献: 
       - 贡献: contribution/index.md
