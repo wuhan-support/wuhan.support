@@ -53,15 +53,16 @@ def gerenate_table(hospitals, name):
     province_dir = '../docs/hospitals/{}'.format(name)
     try:
         hospitals[:][1][7]
-        table = '|  城市  |  区/县  |  名称  |  地址  |  电话  |\n|------|-------|------|------|------|\n'
-        string = '|  {}  |  {}  |  {}  |  {}  |  {}  \n'
+        table = '|  城市  |  区/县  |  名称  |  地址  |  电话  |  导航  |\n|------|-------|------|------|------|------|\n'
+        string = '|  {}  |  {}  |  {}  |  {}  |  {}  |  {}  \n'
     except IndexError:
-        table = '|  城市  |  区/县  |  名称  |  地址  |\n|------|-------|------|------|\n'
-        string = '|  {}  |  {}  |  {}  |  {}  \n'
+        table = '|  城市  |  区/县  |  名称  |  地址  |  导航  |\n|------|-------|------|------|------|\n'
+        string = '|  {}  |  {}  |  {}  |  {}  |  {}  \n'
     city = ''
     city_hospitals = []
     hospitals_len = len(hospitals)
     for index, hospital in enumerate(hospitals[:]):
+        hospital.append('[🧭](https://ditu.amap.com/search?query={})'.format(hospital[5]))
         table += string.format(*hospital[3:])
         if not city:
             city = hospital[3]
@@ -95,12 +96,13 @@ def gerenate_city(city_hospitals, province_dir, city):
             os.makedirs(province_dir)
         try:
             hospitals[:][1][7]
-            city_table = '|  区/县  |  名称  |  地址  |  电话  |\n|------|-------|------|------|\n'
-            city_string = '|  {}  |  {}  |  {}  |  {}  \n'
+            city_table = '|  区/县  |  名称  |  地址  |  电话  |  导航  |\n|------|-------|------|------|------|\n'
+            city_string = '|  {}  |  {}  |  {}  |  {}  |  {}  \n'
         except IndexError:
-            city_table = '|  区/县  |  名称  |  地址  |\n|------|-------|------|\n'
-            city_string = '|  {}  |  {}  |  {}  \n'
+            city_table = '|  区/县  |  名称  |  地址  |  导航  |\n|------|-------|------|------|\n'
+            city_string = '|  {}  |  {}  |  {}  |  {}  \n'
         for city_hospital in city_hospitals:
+            city_hospital.append('[🧭](https://ditu.amap.com/search?query={})'.format(city_hospital[5]))
             city_table += city_string.format(*city_hospital[4:])
 
         with open(city_path, 'w+', encoding='utf-8') as f:

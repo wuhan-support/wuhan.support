@@ -32,6 +32,22 @@ nav:
       - 恩施土家族苗族自治州发: hospitals/hubei/enshi.md
       - 天门市: hospitals/hubei/tianmen.md
       - 随州市 : hospitals/hubei/suizhou.md
+    - 湖南省:
+      - 湖南省: hospitals/hunan.md
+      - 长沙市: hospitals/hunan/changsha.md
+      - 株洲市: hospitals/hunan/zhuzhou.md
+      - 湘潭市: hospitals/hunan/xiangtan.md
+      - 衡阳市: hospitals/hunan/hengyang.md
+      - 邵阳市: hospitals/hunan/shaoyang.md
+      - 岳阳市: hospitals/hunan/yueyang.md
+      - 常德市: hospitals/hunan/changde.md
+      - 张家界市: hospitals/hunan/zhangjiajie.md
+      - 益阳市: hospitals/hunan/yiyang.md
+      - 郴州市: hospitals/hunan/chenzhou.md
+      - 永州市: hospitals/hunan/yongzhou.md
+      - 怀化市: hospitals/hunan/huaihua.md
+      - 娄底市: hospitals/hunan/loudi.md
+      - 湘西土家族苗族自治州: hospitals/hunan/xiangxi.md
     - 北京市:
       - 北京市: hospitals/beijing.md
       - 东城区: hospitals/beijing/dongcheng.md
@@ -67,6 +83,19 @@ nav:
       - 奉贤区: hospitals/shanghai/fengxian.md
       - 金山区: hospitals/shanghai/jinshan.md
       - 崇明区: hospitals/shanghai/chongming.md
+    - 陕西省:
+      - 陕西省: hospitals/shanxi.md
+      - 西安市: hospitals/shanxi/xian.md
+      - 铜川市: hospitals/shanxi/tongchuan.md
+      - 宝鸡市: hospitals/shanxi/baoji.md
+      - 咸阳市: hospitals/shanxi/xianyang.md
+      - 渭南市: hospitals/shanxi/weinan.md
+      - 汉中市: hospitals/shanxi/hanzhong.md
+      - 安康市: hospitals/shanxi/ankang.md
+      - 商洛市: hospitals/shanxi/shangluo.md
+      - 延安市: hospitals/shanxi/yanan.md
+      - 榆林市: hospitals/shanxi/yulin.md
+      # - 韩城市: hospitals/shanxi/hancheng.md
     - 甘肃省:
       - 甘肃省: hospitals/gansu.md
       - 兰州市: hospitals/gansu/lanzhou.md
