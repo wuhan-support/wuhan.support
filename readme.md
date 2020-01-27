@@ -29,7 +29,7 @@
 
 该网站拟定有如下内容：
 
-<img src="https://uploader.shimo.im/f/NZOvsKyuHNgIMyME.png" width="200" >
+<img src="https://uploader.shimo.im/f/NZOvsKyuHNgIMyME.png" width="500" >
 
 该项目已具备基础功能（[点击查看项目主页]( https://feiyan.help)）
   - 目前正在设计新UI，优化前端展示，优化前后端接口中；
