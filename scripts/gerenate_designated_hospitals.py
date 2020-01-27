@@ -87,23 +87,23 @@ def gerenate_city(city_hospitals, province_dir, city):
         city = city[:-1]
     city_name = ''.join(py.lazy_pinyin(city, style=py.Style.NORMAL))
     city_path = os.path.join(province_dir, '{}.md'.format(city_name))
-    if os.path.exists(city_path):
-        pass
-    if not os.path.isdir(province_dir):
-        os.makedirs(province_dir)
-    try:
-        hospitals[:][1][7]
-        city_table = '|  区/县  |  名称  |  地址  |  电话  |\n|------|-------|------|------|\n'
-        city_string = '|  {}  |  {}  |  {}  |  {}  \n'
-    except IndexError:
-        city_table = '|  区/县  |  名称  |  地址  |\n|------|-------|------|\n'
-        city_string = '|  {}  |  {}  |  {}  \n'
-    for city_hospital in city_hospitals:
-        city_table += city_string.format(*city_hospital[4:])
+    if not os.path.exists(city_path):
+        if not os.path.isdir(province_dir):
+            os.makedirs(province_dir)
+        try:
+            hospitals[:][1][7]
+            city_table = '|  区/县  |  名称  |  地址  |  电话  |\n|------|-------|------|------|\n'
+            city_string = '|  {}  |  {}  |  {}  |  {}  \n'
+        except IndexError:
+            city_table = '|  区/县  |  名称  |  地址  |\n|------|-------|------|\n'
+            city_string = '|  {}  |  {}  |  {}  \n'
+        for city_hospital in city_hospitals:
+            city_table += city_string.format(*city_hospital[4:])
 
-    with open(city_path, 'w+', encoding='utf-8') as f:
-        f.write('{}\n{}\n'.format(gerenate_header(city_hospitals[0], 3), city_table))
+        with open(city_path, 'w+', encoding='utf-8') as f:
+            f.write('{}\n{}\n'.format(gerenate_header(city_hospitals[0], 3), city_table))
 
+   
 
 
 if __name__ == '__main__':
