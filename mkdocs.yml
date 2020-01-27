@@ -49,6 +49,24 @@ nav:
       - 怀柔区: hospitals/beijing/huairou.md
       - 门头沟区: hospitals/beijing/mentougou.md
       - 密云县: hospitals/beijing/miyun.md
+    - 上海市:
+      - 上海市: hospitals/shanghai.md
+      - 黄浦区: hospitals/shanghai/huangpu.md
+      - 徐汇区: hospitals/shanghai/xuhui.md
+      - 长宁区: hospitals/shanghai/changning.md
+      - 静安区: hospitals/shanghai/jingan.md
+      - 杨浦区: hospitals/shanghai/yangpu.md
+      - 虹口区: hospitals/shanghai/hongkou.md
+      - 普陀区: hospitals/shanghai/putuo.md
+      - 浦东新区: hospitals/shanghai/pudong.md
+      - 闵行区: hospitals/shanghai/minhang.md
+      - 宝山区: hospitals/shanghai/baoshan.md
+      - 松江区: hospitals/shanghai/songjiang.md
+      - 嘉定区: hospitals/shanghai/jiading.md
+      - 青浦区: hospitals/shanghai/qingpu.md
+      - 奉贤区: hospitals/shanghai/fengxian.md
+      - 金山区: hospitals/shanghai/jinshan.md
+      - 崇明区: hospitals/shanghai/chongming.md
     - 甘肃省:
       - 甘肃省: hospitals/gansu.md
       - 兰州市: hospitals/gansu/lanzhou.md
@@ -79,7 +97,8 @@ nav:
       - 武汉市儿童医院: donate/wch.md
       - 湖北省中医院: donate/whtc.md
   # 如何防护
-  - 预防手册: protection/index.md
+  - 预防: 
+    - 预防: protection/index.md
   # 与开发者沟通交流或者成为开发者
   - 贡献: 
       - 贡献: contribution/index.md
@@ -96,8 +115,8 @@ theme:
   name: material
   language: 'zh'
   palette:
-    primary: 'deep purple'
-    accent: 'amber'
+    primary: 'red'
+    accent: 'deep orange'
   logo: 'images/logo.png'
   feature:
     tabs: true

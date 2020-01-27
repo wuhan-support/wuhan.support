@@ -83,9 +83,12 @@ def gerenate_city(city_hospitals, province_dir, city):
     suburb = ''
     suburb_hospitals = []
     # 怎么杨移除xx族自治州？
-    if city.endswith(('市', '州','区', '县')):
-        city = city[:-1]
-    city_name = ''.join(py.lazy_pinyin(city, style=py.Style.NORMAL))
+    if city.endswith(('新区')):
+        city_name = ''.join(py.lazy_pinyin(city, style=py.Style.NORMAL)[:-2])
+    elif city.endswith(('市', '州','区', '县')):
+        city_name = ''.join(py.lazy_pinyin(city, style=py.Style.NORMAL)[:-1])
+    else:
+        city_name = ''.join(py.lazy_pinyin(city, style=py.Style.NORMAL)[:-1])
     city_path = os.path.join(province_dir, '{}.md'.format(city_name))
     if not os.path.exists(city_path):
         if not os.path.isdir(province_dir):
