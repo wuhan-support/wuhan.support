@@ -1,5 +1,5 @@
 <img src="https://uploader.shimo.im/f/nuWBHWQmJzATp2dI.png" width="100%" >
-<h3 align="center">我们关注的是你所关注的：我们希望为疫区内外的民众和医疗机构提供信息整合平台</h3>
+<h3 align="center">我们关注的是你所关注的：面向疫区内外民众和医疗机构的信息整合平台</h3>
 
 # WuHan-Support :fist:
 
