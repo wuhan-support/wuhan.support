@@ -76,6 +76,10 @@
 
 所有项目除特别声明外，均采用 `GPLv3` 软件协议以最大化支持。
 
-#武汉加油 #wuhan-support
-2020 - forever
+```
+#武汉加油
+#wuhan-support
+```
+
+Licensed under GPLv3, Non-nCoV Support Group, 2020 - forever
 
