@@ -81,5 +81,5 @@
 #wuhan-support
 ```
 
-Licensed under GPLv3, Non-nCoV Support Group, 2020 - forever
+Licensed under GPLv3 - wuhan.support
 
