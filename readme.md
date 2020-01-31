@@ -27,6 +27,15 @@
 
 此外，我们还有```微信机器人```项目，与```信息自动化获取```项目，分别用于推送疫情和分析疫情。
 
+### 1.1 app.feiyan.help 多维度信息整合平台
+
+[https://app.feiyan.help](https://app.feiyan.help)
+
+**面向疫区内外民众和医疗机构的多维度信息整合平台**
+  - 提供医护人员免费住宿信息
+    - 为医护人员提供免费住宿信息列表，支持地理位置排序与地区过滤，为医护人员提供生活保障
+  - 提供医院需求列表
+    - 支持紧急程度与需求核验公示、按照地区过滤等多种功能，方便直观了解情况
 
 ### 1.1 feiyan.help 信息网站
 
@@ -34,8 +43,8 @@
 
 <img src="https://uploader.shimo.im/f/NZOvsKyuHNgIMyME.png" width="500" >
 
-该项目已具备基础功能（[点击查看项目主页]( https://feiyan.help)）
-  - 目前正在设计新UI，优化前端展示，优化前后端接口中；
+该项目已具备基础功能（[点击查看项目主页](https://feiyan.help)）
+  - 目前正在持续开发新UI，优化前端展示，优化前后端接口中；
   - 该项目将持续收集与更新展示的信息。
 
 ### 1.2 wuhan-support 信息工具
@@ -81,5 +90,5 @@
 #wuhan-support
 ```
 
-Licensed under GPLv3, Non-nCoV Support Group, 2020 - forever
+Licensed under GPLv3 - wuhan.support
 
