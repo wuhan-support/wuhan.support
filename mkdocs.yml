@@ -138,6 +138,9 @@ nav:
         - 机器人组: contribution/technology/robot.md
         - 检索组: contribution/technology/search.md
         - 支持组: contribution/technology/support.md
+  - 新版网站测试临时入口: https://app.feiyan.help
+  - 隐私声明: privacy.md
+  - 最终用户许可协议: eula.md
 
 
 theme:

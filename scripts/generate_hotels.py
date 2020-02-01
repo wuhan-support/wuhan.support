@@ -1,23 +1,33 @@
 # -*- coding: UTF-8 -*-
-import csv
+import json
 import os
 import time
 
 
-def read(filename='../data/hotels.csv', encoding='utf-8'):
+def read(filename='../data/accommodations.json', encoding='utf-8'):
     with open(filename, 'r', encoding=encoding) as f:
-        reader = csv.reader(f, delimiter=',')
-        hotels = [hotel for hotel in reader]
-    return hotels
+        return json.load(f)
 
 
-def write_md(hotel):
-    path = '../docs/hotels/{}.md'.format(hotel[0])
-    md = gerenate_md(hotel)
-    if os.path.exists(path):
-        return
-    with open(path, 'w+', encoding='utf-8') as f:
-        f.write(md)
+def dict_process(j):
+    d = dict()
+    for item in list(j.values())[0]:
+        if item['province'] and item['city'] and item['suburb']:
+            if item['province'] not in d.keys():
+                d[item['province']] = dict()
+            if item['city'] not in d[item['province']].keys():
+                d[item['province']][item['city']] = dict()
+            if item['suburb'] not in d[item['province']][item['city']].keys():
+                d[item['province']][item['city']][item['suburb']] = list()
+            d[item['province']][item['city']][item['suburb']].append(item)
+    return d
+
+
+def write_md(hotel, root = '../docs/hotels/'):
+    j = read()
+    d = dict_process(j)
+    for key, value in d.items():
+
 
 
 def gerenate_md(hotel):
@@ -70,6 +80,4 @@ def gerenate_contacts(hotel):
 
 
 if __name__ == '__main__':
-    hotels = read()
-    for hotel in hotels[1:]:
-        write_md(hotel)
+    write_md()
