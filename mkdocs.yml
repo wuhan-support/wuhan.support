@@ -1,5 +1,5 @@
-site_name: feiyan.HELP
-site_url: https://feiyan.help
+site_name: wuhan.support
+site_url: https://wuhan.support
 site_author: Chinese
 site_description: Support the City of WuHan
 copyright: Open source under GNU GPL v3.0
@@ -8,139 +8,30 @@ repo_name: 'wuhan-support'
 repo_url: https://github.com/wuhan-support/wuhan.support
 
 nav:
-  # 现状
-  - 主页: index.md
-  # 如何就诊
-  - 发热门诊定点机构:
-    - 就诊: hospitals/index.md
-    - 湖北省:
-      - 湖北省: hospitals/hubei.md
-      - 武汉市: hospitals/hubei/wuhan.md
-      - 黄石市: hospitals/hubei/huangshi.md
-      - 十堰市: hospitals/hubei/shiyan.md
-      - 荆州市: hospitals/hubei/jingzhou.md
-      #- 宜昌市: hospitals/hubei/yichang.md
-      - 襄阳市: hospitals/hubei/xiangyang.md
-      - 鄂州市: hospitals/hubei/ezhou.md
-      - 荆门市: hospitals/hubei/jingmen.md
-      - 黄冈市: hospitals/hubei/huanggang.md
-      - 孝感市: hospitals/hubei/xiaogan.md
-      - 咸宁市: hospitals/hubei/xianning.md
-      - 仙桃市: hospitals/hubei/xiantao.md
-      - 潜江市: hospitals/hubei/qianjiang.md
-      - 神农架林区: hospitals/hubei/shennongjia.md
-      - 恩施土家族苗族自治州发: hospitals/hubei/enshi.md
-      - 天门市: hospitals/hubei/tianmen.md
-      - 随州市 : hospitals/hubei/suizhou.md
-    - 湖南省:
-      - 湖南省: hospitals/hunan.md
-      - 长沙市: hospitals/hunan/changsha.md
-      - 株洲市: hospitals/hunan/zhuzhou.md
-      - 湘潭市: hospitals/hunan/xiangtan.md
-      - 衡阳市: hospitals/hunan/hengyang.md
-      - 邵阳市: hospitals/hunan/shaoyang.md
-      - 岳阳市: hospitals/hunan/yueyang.md
-      - 常德市: hospitals/hunan/changde.md
-      - 张家界市: hospitals/hunan/zhangjiajie.md
-      - 益阳市: hospitals/hunan/yiyang.md
-      - 郴州市: hospitals/hunan/chenzhou.md
-      - 永州市: hospitals/hunan/yongzhou.md
-      - 怀化市: hospitals/hunan/huaihua.md
-      - 娄底市: hospitals/hunan/loudi.md
-      - 湘西土家族苗族自治州: hospitals/hunan/xiangxi.md
-    - 北京市:
-      - 北京市: hospitals/beijing.md
-      - 东城区: hospitals/beijing/dongcheng.md
-      - 西城区: hospitals/beijing/xicheng.md
-      - 海淀区: hospitals/beijing/haidian.md
-      - 朝阳区: hospitals/beijing/chaoyang.md
-      - 丰台区: hospitals/beijing/fengtai.md
-      - 房山区: hospitals/beijing/fangshan.md
-      - 通州区: hospitals/beijing/tongzhou.md
-      - 顺义区: hospitals/beijing/shunyi.md
-      - 大兴区: hospitals/beijing/daxing.md
-      - 昌平区: hospitals/beijing/changping.md
-      - 平谷区: hospitals/beijing/pinggu.md
-      - 石景山区: hospitals/beijing/shijingshan.md
-      - 怀柔区: hospitals/beijing/huairou.md
-      - 门头沟区: hospitals/beijing/mentougou.md
-      - 密云县: hospitals/beijing/miyun.md
-    - 上海市:
-      - 上海市: hospitals/shanghai.md
-      - 黄浦区: hospitals/shanghai/huangpu.md
-      - 徐汇区: hospitals/shanghai/xuhui.md
-      - 长宁区: hospitals/shanghai/changning.md
-      - 静安区: hospitals/shanghai/jingan.md
-      - 杨浦区: hospitals/shanghai/yangpu.md
-      - 虹口区: hospitals/shanghai/hongkou.md
-      - 普陀区: hospitals/shanghai/putuo.md
-      - 浦东新区: hospitals/shanghai/pudong.md
-      - 闵行区: hospitals/shanghai/minhang.md
-      - 宝山区: hospitals/shanghai/baoshan.md
-      - 松江区: hospitals/shanghai/songjiang.md
-      - 嘉定区: hospitals/shanghai/jiading.md
-      - 青浦区: hospitals/shanghai/qingpu.md
-      - 奉贤区: hospitals/shanghai/fengxian.md
-      - 金山区: hospitals/shanghai/jinshan.md
-      - 崇明区: hospitals/shanghai/chongming.md
-    - 陕西省:
-      - 陕西省: hospitals/shanxi.md
-      - 西安市: hospitals/shanxi/xian.md
-      - 铜川市: hospitals/shanxi/tongchuan.md
-      - 宝鸡市: hospitals/shanxi/baoji.md
-      - 咸阳市: hospitals/shanxi/xianyang.md
-      - 渭南市: hospitals/shanxi/weinan.md
-      - 汉中市: hospitals/shanxi/hanzhong.md
-      - 安康市: hospitals/shanxi/ankang.md
-      - 商洛市: hospitals/shanxi/shangluo.md
-      - 延安市: hospitals/shanxi/yanan.md
-      - 榆林市: hospitals/shanxi/yulin.md
-      # - 韩城市: hospitals/shanxi/hancheng.md
-    - 甘肃省:
-      - 甘肃省: hospitals/gansu.md
-      - 兰州市: hospitals/gansu/lanzhou.md
-      #- 嘉峪关市: hospitals/gansu/jiayuguan.md
-      - 金昌市: hospitals/gansu/jinchang.md
-      - 白银市: hospitals/gansu/baiyin.md
-      - 天水市: hospitals/gansu/tianshui.md
-      - 酒泉市: hospitals/gansu/jiuquan.md
-      - 张掖市: hospitals/gansu/zhangye.md
-      - 武威市: hospitals/gansu/wuwei.md
-      - 定西市: hospitals/gansu/dingxi.md
-      - 陇南市: hospitals/gansu/longnan.md
-      - 平凉市: hospitals/gansu/pingliang.md
-      - 庆阳市: hospitals/gansu/qingyang.md
-      - 临夏市: hospitals/gansu/linxia.md
-      - 甘南市: hospitals/gansu/gannan.md
-  # 如何捐赠
-  - 医护人员免费住宿:
-    - 武汉大陆坊自如驿: hotels/dlfzry.md
-  - 捐赠渠道:
-    - 主要渠道: donate/index.md
-    - 武汉市:
-      - 华中科技大学同济医学院附属协和医院: donate/whuh.md
-      - 武汉市中心医院: donate/chw.md
-      - 武汉大学人民医院: donate/rmhwu.md
-      - 武汉大学中南医院: donate/znhwu.md
-      - 武汉市第一医院: donate/no.1hw.md
-      - 武汉市儿童医院: donate/wch.md
-      - 湖北省中医院: donate/whtc.md
-  # 如何防护
+  - wuhan.support: index.md
+  - 信息组:
+    - 信息组: information.md
+  - 技术组:
+    - 技术组: technology.md
+    - 开发团队: technology/develop.md
+    - 机器人团队: technology/robot.md
+    - 检索团队: technology/search.md
+    - 支持团队: technology/support.md
+  - 宣传组:
+    - 宣传组: propaganda.md
+  - 产品组:
+    - 产品组: product.md
+  - 生科组:
+    - 生科组: biology.md
+  - 人力组:
+    - 人力组: human_resource.md
   - 预防: 
     - 预防: protection/index.md
-  # 与开发者沟通交流或者成为开发者
-  - 贡献: 
-      - 贡献: contribution/index.md
-      - 贡献数据: contribution/data.md
-      - 技术组:
-        - 技术组: contribution/technology.md
-        - 开发组: contribution/technology/develop.md
-        - 机器人组: contribution/technology/robot.md
-        - 检索组: contribution/technology/search.md
-        - 支持组: contribution/technology/support.md
-  - 新版网站测试临时入口: https://app.feiyan.help
-  - 隐私声明: privacy.md
+  - 标准: 
+    - 数据标准: standard/data.md
   - 最终用户许可协议: eula.md
+  - 隐私声明: privacy.md
+  - feiyan.help: https://feiyan.help
 
 
 theme:
