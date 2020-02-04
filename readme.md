@@ -1,5 +1,5 @@
 <img src="https://uploader.shimo.im/f/nuWBHWQmJzATp2dI.png" width="100%" >
-<h3 align="center">我们关注的是你所关注的：面向疫区内外民众和医疗机构的多维度信息整合平台</h3>
+<h3 align="center">我们关注你所关注的，我们支持需要支持的：面向疫区内外民众和医疗机构的综合信息平台</h3>
 
 # WuHan-Support :fist:
 
@@ -59,7 +59,7 @@
 
 ### 2.1 技术组
 
-如果您想通过**技术**出一份力，敬请联系**陟原**（微信号：`INT_ZC`），并请参阅 [技术组的介绍文档](https://feiyan.help/contribution/technology/)
+如果您想通过**技术**出一份力，敬请联系**陟原**（微信号：`INT_ZC`），并请参阅 [技术组的介绍文档](https://wuhan.support/technology/)
 
 ### 2.2 信息组
 
