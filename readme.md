@@ -1,5 +1,5 @@
 <img src="https://uploader.shimo.im/f/nuWBHWQmJzATp2dI.png" width="100%" >
-<h3 align="center">我们关注你所关注的，我们支持需要支持的：面向疫区内外民众和医疗机构的综合信息平台</h3>
+<h3 align="center">驰援一线 传递温暖</h3>
 
 # WuHan-Support :fist:
 
