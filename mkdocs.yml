@@ -1,7 +1,7 @@
 site_name: wuhan.support
 site_url: https://wuhan.support
 site_author: Chinese
-site_description: Support the City of WuHan
+site_description: 驰援一线 传递温暖
 copyright: Open source under GNU GPL v3.0
 
 repo_name: 'wuhan-support'
@@ -21,6 +21,7 @@ nav:
     - 宣传组: propaganda.md
   - 产品组:
     - 产品组: product.md
+    - 用户体验团队: product/ux.md
   - 生科组:
     - 生科组: biology.md
   - 人力组:
